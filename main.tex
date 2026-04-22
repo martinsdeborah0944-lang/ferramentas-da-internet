@@ -1,0 +1,87 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+
+\title{ \normalsize \textsc{}
+		\\ [2.0cm]
+		\HRule{1.5pt} \\
+		\LARGE \textbf{\uppercase{Relatório do trabalho\\ Minimundo Livraria}
+		\HRule{2.0pt} \\ [0.6cm] \LARGE{Ferramentas da Internet} \vspace*{10\baselineskip}}
+		}
+\date{}
+\author{\textbf{Autores:} \\
+		Clara Cotta\\
+		Deborah Martins\\
+        Manuela Brumatti\\
+        Yasmin Silveira\\
+        Ysadora Silva\\
+		23/04/2026}
+
+\maketitle
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Introdução}
+Este minimundo descreve o funcionamento de uma livraria, envolvendo o controle de livros, clientes, vendas e fornecedores. O sistema concede cadastrar livros contendo informações, registrar clientes e realizar compras. Também garante o controle de estoque e o acompanhamento das vendas, ajudando a manter tudo atualizado. Dessa forma, possui o objetivo de armazenar, organizar e gerenciar de forma eficiente as as principais atividades da livraria, contribuindo para um melhor funcionamento do sistema.
+Sua importância está voltada em proporcionar maior controle e confiabilidade nas operações da livraria, contribuindo para a redução de instabilidades, melhor organização das informações e agilidade nos processos internos. Nesse contexto, a ordenação abrange o acompanhamento das principais atividades da livraria, incluindo o relacionamento entre os dados envolvidos nas vendas, no cadastro de pessoas, no fornecimento de produtos e na logística de atendimento.
+
+\section{Minimundo}
+A livraria Books Space precisa de um sistema de banco de dados integrado para gerenciar seu estoque, vendas, equipe de funcionários e a logística com fornecedores, controlando todo o fluxo desde a entrada do livro até a venda ao consumidor final. No centro do sistema, utiliza-se uma estrutura de especialização onde a entidade Pessoa, composta por CPF (ID), nome, e-mail e endereço, ramifica-se em Funcionário, que possui matrícula, cargo, salário e data de admissão; e Cliente, que armazena data de nascimento, pontos de fidelidade e data do último login. Um cliente pode realizar vários pedidos, enquanto um funcionário pode atender diversos clientes, mas cada pedido pertence a apenas um cliente e um funcionário. O acervo é representado pela entidade Livro, que possui ISBN (ID), título, preço de venda e ano de publicação, estando associado ao controle de Estoque, responsável por controlar o código de armazenamento (ID), registrar a quantidade de livros e o espaço disponível. Cada livro está vinculado, obrigatoriamente, a uma única Editora, que possui CNPJ (ID), nome e contato, e a uma única Categoria, que contém identificação (ID), nome e descrição. Já a relação entre Livro e Autor é de muitos para muitos, permitindo que uma obra tenha múltiplos escritores e que um autor possa estar associado a diversas obras. O processo de venda é representado pela entidade Pedido de Venda, que possui número identificador (ID), data, valor total e status. Cada pedido está associado a um único cliente e a um único funcionário responsável pelo atendimento. Um pedido de venda pode conter vários livros, sendo preciso registrar a quantidade de cada item adicionado. Assim, estabelece-se uma relação entre Pedido de Venda e Livro, em que um pedido pode conter muitos livros e um mesmo livro pode estar presente em vários pedidos. A entidade Fornecedor é responsável por gerenciar as informações dos distribuidores de livros da livraria. Ela é composta por CNPJ (ID), nome, contato e endereço. Um fornecedor pode fornecer diversos livros e um mesmo livro pode ser adquirido de diferentes fornecedores. A livraria registra a entrada de livros por meio da entidade Nota de Entrada, formada por número (ID), data e valor total. Cada nota pode conter vários Itens de Entrada, sendo que cada item está ligado a um único Livro, registrando quantidade e custo por unidade. A entidade Livro pode estar associada a diferentes fornecedores, permitindo que um mesmo livro seja adquirido de mais de uma origem. O registro da entrada atualiza o Estoque e pode estar associado a um Funcionário, que fica responsável pelo recebimento. Além disso, um Fornecedor pode estar vinculado a diversas notas de entrada. 
+ 
+\section{Divisão de tarefas}
+Do total de 10 entidades presentes no minimundo, Clara, Leticya e Ysadora fizeram as 7 primeiras, e o restante foi dividido entre Deborah, Manuela e Yasmin. Clara e Deborah ficaram responsáveis pelo relatório, montando a introdução.
+
+
+
+\newpage
+
+
+\end{document}
