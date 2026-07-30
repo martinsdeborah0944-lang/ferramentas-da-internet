@@ -1,0 +1,2861 @@
+<drawing>
+<figures>
+<ent id="0">
+<children>
+<r id="1" x="1018" y="49" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="2" x="1037.310546875" y="61.7080078125">
+<a>
+<text>
+<string>Pessoa</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<atrchave id="3" nullable="false" attributeType="NUMBER">
+<children>
+<e id="4" x="1058" y="15" w="44" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="5" x="1069.740234375" y="17.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>cpf</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="6" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="7" x="992" y="23" w="60" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="8" x="1005.1513671875" y="25.7080078125">
+<a>
+<text>
+<string>nome</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="9" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="a" x="1107" y="24" w="54" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="b" x="1117.693359375" y="26.7080078125">
+<a>
+<text>
+<string>email</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="c" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="d" x="1118" y="48" w="77" h="22">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="e" x="1128.9140625" y="51.7080078125">
+<a>
+<text>
+<string>endereco</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<ent id="f">
+<children>
+<r id="10" x="936" y="155" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="11" x="941.294921875" y="167.7080078125">
+<a>
+<text>
+<string>Funcionario</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<atr id="12" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="13" x="836" y="163" w="80" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="14" x="847.81640625" y="165.7080078125">
+<a>
+<text>
+<string>matricula</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="15" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="16" x="943" y="118" w="60" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="17" x="956.330078125" y="120.7080078125">
+<a>
+<text>
+<string>cargo</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="18" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="19" x="859" y="133" w="65" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="1a" x="871.671875" y="135.7080078125">
+<a>
+<text>
+<string>salario</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="1b">
+<points>
+<p colinear="true" x="1075" y="35" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1068" y="49" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="1c">
+<Owner>
+<atrchave ref="3"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="1d">
+<Owner>
+<ent ref="0"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="1e">
+<points>
+<p colinear="true" x="1032" y="43" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1038" y="49" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="1f">
+<Owner>
+<atr ref="6"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="20">
+<Owner>
+<ent ref="0"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="21">
+<points>
+<p colinear="true" x="1112.2857142857142" y="44" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1098" y="50.578947368421055" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="22">
+<Owner>
+<atr ref="9"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="23">
+<Owner>
+<ent ref="0"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="24">
+<points>
+<p colinear="true" x="1118" y="62.90862944162436" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1098" y="64.93908629441624" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="25">
+<Owner>
+<atr ref="c"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="26">
+<Owner>
+<ent ref="0"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<atr id="27" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="28" x="844" y="95" w="110.890625" h="25">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="29" x="854" y="100.2080078125">
+<a>
+<text>
+<string>data_admissao</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="2a">
+<points>
+<p colinear="true" x="936" y="174.2" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="916" y="173.8" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="2b">
+<Owner>
+<ent ref="f"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="2c">
+<Owner>
+<atr ref="12"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="2d">
+<points>
+<p colinear="true" x="936" y="159.85207100591717" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="917.90625" y="153" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="2e">
+<Owner>
+<ent ref="f"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="2f">
+<Owner>
+<atr ref="18"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="30">
+<points>
+<p colinear="true" x="974.7234042553191" y="155" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="973.6382978723404" y="138" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="31">
+<Owner>
+<ent ref="f"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="32">
+<Owner>
+<atr ref="15"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="33">
+<points>
+<p colinear="true" x="953.3171296296297" y="155" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="913.6221064814815" y="120" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="34">
+<Owner>
+<ent ref="f"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="35">
+<Owner>
+<atr ref="27"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<ent id="36">
+<children>
+<r id="37" x="1094" y="154" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="38" x="1113.2080078125" y="166.7080078125">
+<a>
+<text>
+<string>Cliente</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<atr id="39" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="3a" x="1140" y="109" w="75.271484375" h="23">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="3b" x="1146.859375" y="113.2080078125">
+<a>
+<text>
+<string>data_nasc</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="3c" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="3d" x="1215" y="163" w="104.1171875" h="26">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="3e" x="1225" y="168.7080078125">
+<a>
+<text>
+<string>pts_fidelidade</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="3f" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="40" x="1190" y="131" w="128.6796875" h="25">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="41" x="1200" y="136.2080078125">
+<a>
+<text>
+<string>data_ultimo_login</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="42">
+<points>
+<p colinear="true" x="1150.3124269859813" y="154" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1168.2560966705607" y="132" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="43">
+<Owner>
+<ent ref="36"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="44">
+<Owner>
+<atr ref="39"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="45">
+<points>
+<p colinear="true" x="1174" y="174.60123888089717" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1215" y="175.21750873381674" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="46">
+<Owner>
+<ent ref="36"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="47">
+<Owner>
+<atr ref="3c"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="48">
+<points>
+<p colinear="true" x="1174" y="163.86204434057194" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1205.0202356557377" y="156" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="49">
+<Owner>
+<ent ref="36"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="4a">
+<Owner>
+<atr ref="3f"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<ent id="4b">
+<children>
+<r id="4c" x="373" y="527" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="4d" x="398.2607421875" y="539.7080078125">
+<a>
+<text>
+<string>Livro</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<atrchave id="4e" nullable="false" attributeType="NUMBER">
+<children>
+<e id="4f" x="371" y="621" w="57" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="50" x="382.3115234375" y="623.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>ISBN</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="51" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="52" x="295" y="621" w="57" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="53" x="308.0400390625" y="623.7080078125">
+<a>
+<text>
+<string>titulo</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="54" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="55" x="296" y="647" w="103" h="24">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="56" x="308.78125" y="651.7080078125">
+<a>
+<text>
+<string>preco_venda</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="57" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="58" x="254" y="590" w="80" h="23">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="59" x="264.5771484375" y="594.2080078125">
+<a>
+<text>
+<string>ano_publi</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="5a">
+<points>
+<p colinear="true" x="401.30357142857144" y="567" c1x="592" c1y="229" c2x="592" c2y="229"/>
+<p colinear="true" x="354.51785714285717" y="647" c1x="592" c1y="229" c2x="592" c2y="229"/>
+</points>
+<startConnector>
+<rConnector id="5b">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="5c">
+<Owner>
+<atr ref="54"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="5d">
+<points>
+<p colinear="true" x="373" y="565.3193277310925" c1x="592" c1y="229" c2x="592" c2y="229"/>
+<p colinear="true" x="319.11009174311926" y="590" c1x="592" c1y="229" c2x="592" c2y="229"/>
+</points>
+<startConnector>
+<rConnector id="5e">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="5f">
+<Owner>
+<atr ref="57"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="60">
+<points>
+<p colinear="true" x="391.69047619047615" y="567" c1x="592" c1y="229" c2x="592" c2y="229"/>
+<p colinear="true" x="334.1547619047619" y="621" c1x="592" c1y="229" c2x="592" c2y="229"/>
+</points>
+<startConnector>
+<rConnector id="61">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="62">
+<Owner>
+<atr ref="51"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="63">
+<points>
+<p colinear="true" x="409.7857142857143" y="567" c1x="592" c1y="229" c2x="592" c2y="229"/>
+<p colinear="true" x="401.10714285714283" y="621" c1x="592" c1y="229" c2x="592" c2y="229"/>
+</points>
+<startConnector>
+<rConnector id="64">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="65">
+<Owner>
+<atrchave ref="4e"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<ent id="66">
+<children>
+<r id="67" x="66" y="379" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="68" x="81.96484375" y="391.7080078125">
+<a>
+<text>
+<string>Estoque</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<atrchave id="69" nullable="false" attributeType="NUMBER">
+<children>
+<e id="6a" x="170" y="337" w="93" h="24">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="6b" x="179.462890625" y="341.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>cod_armaz</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="6c" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="6d" x="53" y="333" w="80" h="23">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="6e" x="59.3759765625" y="337.2080078125">
+<a>
+<text>
+<string>qntd_livros</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="6f" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="70" x="109" y="300" w="129.458984375" h="28">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="71" x="119" y="306.7080078125">
+<a>
+<text>
+<string>espaco_disponivel</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<ent id="72">
+<children>
+<r id="73" x="734" y="618" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="74" x="752.6513671875" y="630.7080078125">
+<a>
+<text>
+<string>Editora</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<lcaf id="75">
+<points>
+<p colinear="true" x="146" y="380.9004524886878" c1x="577" c1y="-114" c2x="577" c2y="-114"/>
+<p colinear="true" x="189.98" y="361" c1x="577" c1y="-114" c2x="577" c2y="-114"/>
+</points>
+<startConnector>
+<rConnector id="76">
+<Owner>
+<ent ref="66"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="77">
+<Owner>
+<atrchave ref="69"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="78">
+<points>
+<p colinear="true" x="121.93635110294117" y="379" c1x="592" c1y="43" c2x="592" c2y="43"/>
+<p colinear="true" x="162.57404641544116" y="328" c1x="592" c1y="43" c2x="592" c2y="43"/>
+</points>
+<startConnector>
+<rConnector id="79">
+<Owner>
+<ent ref="66"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="7a">
+<Owner>
+<atr ref="6f"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="7b">
+<points>
+<p colinear="true" x="101.22935779816513" y="379" c1x="592" c1y="43" c2x="592" c2y="43"/>
+<p colinear="true" x="95.74311926605505" y="356" c1x="592" c1y="43" c2x="592" c2y="43"/>
+</points>
+<startConnector>
+<rConnector id="7c">
+<Owner>
+<ent ref="66"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="7d">
+<Owner>
+<atr ref="6c"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<atrchave id="7e" nullable="false" attributeType="NUMBER">
+<children>
+<e id="7f" x="839" y="649" w="57" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="80" x="850.349609375" y="651.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>CNPJ</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="81" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="82" x="798" y="593" w="53" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="83" x="807.6513671875" y="595.7080078125">
+<a>
+<text>
+<string>nome</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="84" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="85" x="830" y="620" w="62" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="86" x="838.4619140625" y="622.7080078125">
+<a>
+<text>
+<string>contato</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<ent id="87">
+<children>
+<r id="88" x="668" y="699" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="89" x="679.078125" y="711.7080078125">
+<a>
+<text>
+<string>Categoria</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<lcaf id="8a">
+<points>
+<p colinear="true" x="810.0714285714286" y="613" c1x="242" c1y="444" c2x="242" c2y="444"/>
+<p colinear="true" x="802.8571428571429" y="618" c1x="242" c1y="444" c2x="242" c2y="444"/>
+</points>
+<startConnector>
+<rConnector id="8b">
+<Owner>
+<atr ref="81"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="8c">
+<Owner>
+<ent ref="72"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="8d">
+<points>
+<p colinear="true" x="830" y="632.8505747126437" c1x="242" c1y="444" c2x="242" c2y="444"/>
+<p colinear="true" x="814" y="634.3218390804598" c1x="242" c1y="444" c2x="242" c2y="444"/>
+</points>
+<startConnector>
+<rConnector id="8e">
+<Owner>
+<atr ref="84"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="8f">
+<Owner>
+<ent ref="72"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="90">
+<points>
+<p colinear="true" x="814" y="646.9839572192514" c1x="257" c1y="601" c2x="257" c2y="601"/>
+<p colinear="true" x="839" y="652.5989304812834" c1x="257" c1y="601" c2x="257" c2y="601"/>
+</points>
+<startConnector>
+<rConnector id="91">
+<Owner>
+<ent ref="72"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="92">
+<Owner>
+<atrchave ref="7e"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<atrchave id="93" nullable="false" attributeType="NUMBER">
+<children>
+<e id="94" x="770" y="695" w="35" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="95" x="781.25390625" y="697.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>id</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="96" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="97" x="771" y="724" w="55" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="98" x="781.6513671875" y="726.7080078125">
+<a>
+<text>
+<string>nome</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="99" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="9a" x="742" y="754" w="80" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="9b" x="753.857421875" y="756.7080078125">
+<a>
+<text>
+<string>descricao</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="9c">
+<points>
+<p colinear="true" x="771" y="729.4419889502763" c1x="522" c1y="226" c2x="522" c2y="226"/>
+<p colinear="true" x="748" y="725.6298342541436" c1x="522" c1y="226" c2x="522" c2y="226"/>
+</points>
+<startConnector>
+<rConnector id="9d">
+<Owner>
+<atr ref="96"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="9e">
+<Owner>
+<ent ref="87"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="9f">
+<points>
+<p colinear="true" x="770" y="708.0817610062893" c1x="522" c1y="226" c2x="522" c2y="226"/>
+<p colinear="true" x="748" y="711.9559748427673" c1x="522" c1y="226" c2x="522" c2y="226"/>
+</points>
+<startConnector>
+<rConnector id="a0">
+<Owner>
+<atrchave ref="93"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="a1">
+<Owner>
+<ent ref="87"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="a2">
+<points>
+<p colinear="true" x="765.5555555555555" y="754" c1x="522" c1y="226" c2x="522" c2y="226"/>
+<p colinear="true" x="740.8888888888889" y="739" c1x="522" c1y="226" c2x="522" c2y="226"/>
+</points>
+<startConnector>
+<rConnector id="a3">
+<Owner>
+<atr ref="99"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="a4">
+<Owner>
+<ent ref="87"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<ent id="a5">
+<children>
+<r id="a6" x="998" y="320" w="126.32421875" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="a7" x="1008" y="332.7080078125">
+<a>
+<text>
+<string>Pedido_de_venda</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<atrchave id="a8" nullable="false" attributeType="NUMBER">
+<children>
+<e id="a9" x="1138" y="298" w="30" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="aa" x="1146.75390625" y="300.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>id</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="ab" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="ac" x="1188" y="303" w="41" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="ad" x="1195.1904296875" y="305.7080078125">
+<a>
+<text>
+<string>data</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="ae" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="af" x="1166" y="327" w="80" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="b0" x="1173.5625" y="329.7080078125">
+<a>
+<text>
+<string>valor_total</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="b1" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="b2" x="1150" y="352" w="61" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="b3" x="1162.119140625" y="354.7080078125">
+<a>
+<text>
+<string>status</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="b4">
+<points>
+<p colinear="true" x="1138" y="313.2266008804577" c1x="541" c1y="1" c2x="541" c2y="1"/>
+<p colinear="true" x="1118.560791015625" y="320" c1x="541" c1y="1" c2x="541" c2y="1"/>
+</points>
+<startConnector>
+<rConnector id="b5">
+<Owner>
+<atrchave ref="a8"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="b6">
+<Owner>
+<ent ref="a5"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="b7">
+<points>
+<p colinear="true" x="1188" y="316.7566711295518" c1x="541" c1y="1" c2x="541" c2y="1"/>
+<p colinear="true" x="1124.32421875" y="328.42540132826065" c1x="541" c1y="1" c2x="541" c2y="1"/>
+</points>
+<startConnector>
+<rConnector id="b8">
+<Owner>
+<atr ref="ab"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="b9">
+<Owner>
+<ent ref="a5"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="ba">
+<points>
+<p colinear="true" x="1150" y="356.37730970033226" c1x="541" c1y="1" c2x="541" c2y="1"/>
+<p colinear="true" x="1124.32421875" y="351.64396654719235" c1x="541" c1y="1" c2x="541" c2y="1"/>
+</points>
+<startConnector>
+<rConnector id="bb">
+<Owner>
+<atr ref="b1"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="bc">
+<Owner>
+<ent ref="a5"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="bd">
+<points>
+<p colinear="true" x="1166" y="337.82851248027833" c1x="541" c1y="1" c2x="541" c2y="1"/>
+<p colinear="true" x="1124.32421875" y="338.6917351025527" c1x="541" c1y="1" c2x="541" c2y="1"/>
+</points>
+<startConnector>
+<rConnector id="be">
+<Owner>
+<atr ref="ae"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="bf">
+<Owner>
+<ent ref="a5"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<rel id="c0">
+<children>
+<diamond id="c1" x="1100" y="237" w="67" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="c2" x="1113.712890625" y="249.7080078125">
+<a>
+<text>
+<string>realiza</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelMuitos id="c3">
+<points>
+<p colinear="true" x="1133.620481927711" y="237" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1133.879518072289" y="194" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="c4">
+<Owner>
+<rel ref="c0"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="c5">
+<Owner>
+<ent ref="36"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<llabelDoubleUm id="c6">
+<points>
+<p colinear="true" x="1116.0691829819277" y="277" c1x="541" c1y="1" c2x="541" c2y="1"/>
+<p colinear="true" x="1078.5929263930723" y="320" c1x="541" c1y="1" c2x="541" c2y="1"/>
+</points>
+<startConnector>
+<rConnector id="c7">
+<Owner>
+<rel ref="c0"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="c8">
+<Owner>
+<ent ref="a5"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+</llabelDoubleUm>
+<rel id="c9">
+<children>
+<diamond id="ca" x="940" y="238" w="72" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="cb" x="955.3486328125" y="250.7080078125">
+<a>
+<text>
+<string>atende</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelDoubleUm id="cc">
+<points>
+<p colinear="true" x="996.7712461890244" y="278" c1x="541" c1y="1" c2x="541" c2y="1"/>
+<p colinear="true" x="1040.3908631859756" y="320" c1x="541" c1y="1" c2x="541" c2y="1"/>
+</points>
+<startConnector>
+<rConnector id="cd">
+<Owner>
+<rel ref="c9"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="ce">
+<Owner>
+<ent ref="a5"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+</llabelDoubleUm>
+<llabelMuitos id="cf">
+<points>
+<p colinear="true" x="976" y="238" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="976" y="195" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="d0">
+<Owner>
+<rel ref="c9"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="d1">
+<Owner>
+<ent ref="f"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<rel id="d2">
+<children>
+<diamond id="d3" x="204" y="453" w="114.60546875" h="43">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="d4" x="220" y="467.2080078125">
+<a>
+<text>
+<string>associado por</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelDoubleUm id="d5">
+<points>
+<p colinear="true" x="306.28882004310344" y="496" c1x="585" c1y="230" c2x="585" c2y="230"/>
+<p colinear="true" x="373" y="527.8829777646165" c1x="585" c1y="230" c2x="585" c2y="230"/>
+</points>
+<startConnector>
+<rConnector id="d6">
+<Owner>
+<rel ref="d2"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="d7">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+</llabelDoubleUm>
+<llabelDoubleUm id="d8">
+<points>
+<p colinear="true" x="217.07745240066225" y="453" c1x="592" c1y="43" c2x="592" c2y="43"/>
+<p colinear="true" x="146" y="418.4458907124442" c1x="592" c1y="43" c2x="592" c2y="43"/>
+</points>
+<startConnector>
+<rConnector id="d9">
+<Owner>
+<rel ref="d2"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="da">
+<Owner>
+<ent ref="66"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+</llabelDoubleUm>
+<rel id="db">
+<children>
+<diamond id="dc" x="568" y="621" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="dd" x="586.7041015625" y="633.7080078125">
+<a>
+<text>
+<string>publica</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelMuitos id="de">
+<points>
+<p colinear="true" x="648" y="640.277108433735" c1x="508" c1y="382" c2x="508" c2y="382"/>
+<p colinear="true" x="734" y="638.722891566265" c1x="508" c1y="382" c2x="508" c2y="382"/>
+</points>
+<startConnector>
+<rConnector id="df">
+<Owner>
+<rel ref="db"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="e0">
+<Owner>
+<ent ref="72"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<llabelDoubleUm id="e1">
+<points>
+<p colinear="true" x="568" y="621.7179487179487" c1x="573" c1y="229" c2x="573" c2y="229"/>
+<p colinear="true" x="453" y="566.2820512820513" c1x="573" c1y="229" c2x="573" c2y="229"/>
+</points>
+<startConnector>
+<rConnector id="e2">
+<Owner>
+<rel ref="db"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="e3">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+</llabelDoubleUm>
+<rel id="e4">
+<children>
+<diamond id="e5" x="512" y="699" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="e6" x="525.240234375" y="711.7080078125">
+<a>
+<text>
+<string>classifica</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelMuitos id="e7">
+<points>
+<p colinear="true" x="592" y="719" c1x="786" c1y="234" c2x="786" c2y="234"/>
+<p colinear="true" x="668" y="719" c1x="786" c1y="234" c2x="786" c2y="234"/>
+</points>
+<startConnector>
+<rConnector id="e8">
+<Owner>
+<rel ref="e4"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="e9">
+<Owner>
+<ent ref="87"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<llabelDoubleUm id="ea">
+<points>
+<p colinear="true" x="535.8372093023256" y="699" c1x="783" c1y="230" c2x="783" c2y="230"/>
+<p colinear="true" x="429.1627906976744" y="567" c1x="783" c1y="230" c2x="783" c2y="230"/>
+</points>
+<startConnector>
+<rConnector id="eb">
+<Owner>
+<rel ref="e4"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="ec">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+</llabelDoubleUm>
+<disjuncao id="ed">
+<children>
+<circ id="ee" x="1047" y="108" w="20" h="20">
+<a>
+<fillColor>
+<color rgba="#fff5f2e0"/>
+</fillColor>
+</a>
+</circ>
+<tn id="ef" x="1051" y="109">
+<a>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<fontSize>
+<double>16</double>
+</fontSize>
+<text>
+<string>d</string>
+</text>
+</a>
+</tn>
+</children>
+</disjuncao>
+<llabelDoubleGeneralizacao id="f0" labelGeneralizacaoText="caracteristica">
+<points>
+<p colinear="true" x="1057.5936830410285" y="89" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1057.2076819300055" y="108" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="f1">
+<Owner>
+<ent ref="0"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="f2">
+<Owner>
+<disjuncao ref="ed"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+<a>
+<innerStrokeWidthFactor>
+<double>3</double>
+</innerStrokeWidthFactor>
+</a>
+</llabelDoubleGeneralizacao>
+<generalizacaoLine id="f3">
+<points>
+<p colinear="true" x="1047" y="125.23220486111111" c1x="643" c1y="38.687928082191775" c2x="643" c2y="38.687928082191775"/>
+<p colinear="true" x="1004.5325077399381" y="155" c1x="643" c1y="38.687928082191775" c2x="643" c2y="38.687928082191775"/>
+</points>
+<startConnector>
+<rConnector id="f4">
+<Owner>
+<disjuncao ref="ed"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="f5">
+<Owner>
+<ent ref="f"/>
+</Owner>
+</rConnector>
+</endConnector>
+</generalizacaoLine>
+<generalizacaoLine id="f6">
+<points>
+<p colinear="true" x="1067" y="125.46646712662337" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+<p colinear="true" x="1106.3902234050004" y="154" c1x="541" c1y="-9" c2x="541" c2y="-9"/>
+</points>
+<startConnector>
+<rConnector id="f7">
+<Owner>
+<disjuncao ref="ed"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="f8">
+<Owner>
+<ent ref="36"/>
+</Owner>
+</rConnector>
+</endConnector>
+</generalizacaoLine>
+<ent id="f9">
+<children>
+<r id="fa" x="46" y="530" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="fb" x="69.53515625" y="542.7080078125">
+<a>
+<text>
+<string>Autor</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<rel id="fc">
+<children>
+<diamond id="fd" x="189" y="529" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="fe" x="205.9140625" y="541.7080078125">
+<a>
+<text>
+<string>escreve</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelMuitos id="ff">
+<points>
+<p colinear="true" x="269" y="548.5652173913044" c1x="553" c1y="78" c2x="553" c2y="78"/>
+<p colinear="true" x="373" y="547.4347826086956" c1x="553" c1y="78" c2x="553" c2y="78"/>
+</points>
+<startConnector>
+<rConnector id="100">
+<Owner>
+<rel ref="fc"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="101">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<llabelMuitos id="102">
+<points>
+<p colinear="true" x="189" y="549.2797202797203" c1x="556" c1y="82" c2x="556" c2y="82"/>
+<p colinear="true" x="126" y="549.7202797202797" c1x="556" c1y="82" c2x="556" c2y="82"/>
+</points>
+<startConnector>
+<rConnector id="103">
+<Owner>
+<rel ref="fc"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="104">
+<Owner>
+<ent ref="f9"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>M</string>
+</text>
+</a>
+</llabelMuitos>
+<atrchave id="105" nullable="false" attributeType="NUMBER">
+<children>
+<e id="106" x="84" y="487" w="80" h="21">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="107" x="95.37109375" y="490.2080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>id_autor</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="108" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="109" x="25" y="498" w="57" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="10a" x="36.6513671875" y="500.7080078125">
+<a>
+<text>
+<string>nome</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="10b">
+<points>
+<p colinear="true" x="100.47619047619048" y="530" c1x="556" c1y="82" c2x="556" c2y="82"/>
+<p colinear="true" x="116.4" y="508" c1x="556" c1y="82" c2x="556" c2y="82"/>
+</points>
+<startConnector>
+<rConnector id="10c">
+<Owner>
+<ent ref="f9"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="10d">
+<Owner>
+<atrchave ref="105"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="10e">
+<points>
+<p colinear="true" x="70.52380952380952" y="530" c1x="556" c1y="82" c2x="556" c2y="82"/>
+<p colinear="true" x="61.23809523809524" y="518" c1x="556" c1y="82" c2x="556" c2y="82"/>
+</points>
+<startConnector>
+<rConnector id="10f">
+<Owner>
+<ent ref="f9"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="110">
+<Owner>
+<atr ref="108"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<rel id="111">
+<children>
+<diamond id="112" x="1023" y="424" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="113" x="1040.6611328125" y="436.7080078125">
+<a>
+<text>
+<string>contem</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<ent id="114">
+<children>
+<r id="115" x="1019" y="527" w="87" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="116" x="1024.30859375" y="539.7080078125">
+<a>
+<text>
+<string>Item_pedido</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<llabelUm id="117">
+<points>
+<p colinear="true" x="1062.6465594951924" y="424" c1x="-159" c1y="-2" c2x="-159" c2y="-2"/>
+<p colinear="true" x="1061.5155498798076" y="360" c1x="-159" c1y="-2" c2x="-159" c2y="-2"/>
+</points>
+<startConnector>
+<rConnector id="118">
+<Owner>
+<rel ref="111"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="119">
+<Owner>
+<ent ref="a5"/>
+</Owner>
+</rConnector>
+</endConnector>
+</llabelUm>
+<llabelMuitos id="11a">
+<points>
+<p colinear="true" x="1062.9029126213593" y="464" c1x="-347" c1y="3" c2x="-347" c2y="3"/>
+<p colinear="true" x="1062.5970873786407" y="527" c1x="-347" c1y="3" c2x="-347" c2y="3"/>
+</points>
+<startConnector>
+<rConnector id="11b">
+<Owner>
+<rel ref="111"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="11c">
+<Owner>
+<ent ref="114"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<atr id="11d" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="11e" x="1162" y="520" w="80" h="25">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="11f" x="1168.3994140625" y="525.2080078125">
+<a>
+<text>
+<string>quantidade</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atrchave id="120" nullable="false" attributeType="NUMBER">
+<children>
+<e id="121" x="1122" y="489" w="80" h="25">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="122" x="1128.748046875" y="494.2080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>id_pedido</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atrchaveparcial id="123" nullable="false" attributeType="NUMBER">
+<children>
+<e id="124" x="1129" y="551" w="54" h="27">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="125" x="1138.8115234375" y="557.2080078125">
+<a>
+<strokeDashes>
+<doubleArray>
+<double>3</double>
+</doubleArray>
+</strokeDashes>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>ISBN</string>
+</text>
+</a>
+</t>
+</children>
+</atrchaveparcial>
+<lcaf id="126">
+<points>
+<p colinear="true" x="1134.6648351648353" y="514" c1x="-347" c1y="3" c2x="-347" c2y="3"/>
+<p colinear="true" x="1106" y="527.108040201005" c1x="-347" c1y="3" c2x="-347" c2y="3"/>
+</points>
+<startConnector>
+<rConnector id="127">
+<Owner>
+<atrchave ref="120"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="128">
+<Owner>
+<ent ref="114"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="129">
+<points>
+<p colinear="true" x="1162" y="536.65770609319" c1x="-347" c1y="3" c2x="-347" c2y="3"/>
+<p colinear="true" x="1106" y="542.4784946236559" c1x="-347" c1y="3" c2x="-347" c2y="3"/>
+</points>
+<startConnector>
+<rConnector id="12a">
+<Owner>
+<atr ref="11d"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="12b">
+<Owner>
+<ent ref="114"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="12c">
+<points>
+<p colinear="true" x="1106" y="555.1417112299465" c1x="-351" c1y="76" c2x="-351" c2y="76"/>
+<p colinear="true" x="1129" y="559.4465240641712" c1x="-351" c1y="76" c2x="-351" c2y="76"/>
+</points>
+<startConnector>
+<rConnector id="12d">
+<Owner>
+<ent ref="114"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="12e">
+<Owner>
+<atrchaveparcial ref="123"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<rel id="12f">
+<children>
+<diamond id="130" x="893" y="528" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="131" x="913.9248046875" y="540.7080078125">
+<a>
+<text>
+<string>possui</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelMuitos id="132">
+<points>
+<p colinear="true" x="973" y="547.6911196911196" c1x="-351" c1y="76" c2x="-351" c2y="76"/>
+<p colinear="true" x="1019" y="547.3359073359073" c1x="-351" c1y="76" c2x="-351" c2y="76"/>
+</points>
+<startConnector>
+<rConnector id="133">
+<Owner>
+<rel ref="12f"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="134">
+<Owner>
+<ent ref="114"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<llabelMuitos id="135">
+<points>
+<p colinear="true" x="893" y="547.9230769230769" c1x="564" c1y="4" c2x="564" c2y="4"/>
+<p colinear="true" x="453" y="547.0769230769231" c1x="564" c1y="4" c2x="564" c2y="4"/>
+</points>
+<startConnector>
+<rConnector id="136">
+<Owner>
+<rel ref="12f"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="137">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>M</string>
+</text>
+</a>
+</llabelMuitos>
+<rel id="138">
+<children>
+<diamond id="139" x="372" y="412" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="13a" x="385.69140625" y="424.7080078125">
+<a>
+<text>
+<string>pertence</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<ent id="13b">
+<children>
+<r id="13c" x="349" y="304" w="124.96484375" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="13d" x="359" y="316.7080078125">
+<a>
+<text>
+<string>Item_de_entrada</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<llabelUm id="13e">
+<points>
+<p colinear="true" x="412.17391304347825" y="452" c1x="557" c1y="5" c2x="557" c2y="5"/>
+<p colinear="true" x="412.82608695652175" y="527" c1x="557" c1y="5" c2x="557" c2y="5"/>
+</points>
+<startConnector>
+<rConnector id="13f">
+<Owner>
+<rel ref="138"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="140">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</endConnector>
+</llabelUm>
+<llabelMuitos id="141">
+<points>
+<p colinear="true" x="411.9041521990741" y="412" c1x="-480" c1y="-355" c2x="-480" c2y="-355"/>
+<p colinear="true" x="411.5782696759259" y="344" c1x="-480" c1y="-355" c2x="-480" c2y="-355"/>
+</points>
+<startConnector>
+<rConnector id="142">
+<Owner>
+<rel ref="138"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="143">
+<Owner>
+<ent ref="13b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<atrchave id="144" nullable="false" attributeType="NUMBER">
+<children>
+<e id="145" x="371" y="241" w="80" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="146" x="385.37109375" y="243.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>id_item</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="147" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="148" x="423" y="268" w="80" h="25">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="149" x="429.3994140625" y="273.2080078125">
+<a>
+<text>
+<string>quantidade</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="14a">
+<points>
+<p colinear="true" x="411.06608518835617" y="261" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+<p colinear="true" x="411.35025149828766" y="304" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+</points>
+<startConnector>
+<rConnector id="14b">
+<Owner>
+<atrchave ref="144"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="14c">
+<Owner>
+<ent ref="13b"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="14d">
+<points>
+<p colinear="true" x="448.19609823994256" y="293" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+<p colinear="true" x="435.168664691092" y="304" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+</points>
+<startConnector>
+<rConnector id="14e">
+<Owner>
+<atr ref="147"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="14f">
+<Owner>
+<ent ref="13b"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<rel id="150">
+<children>
+<diamond id="151" x="599" y="467" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="152" x="616.6171875" y="479.7080078125">
+<a>
+<text>
+<string>fornece</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<ent id="153">
+<children>
+<r id="154" x="767" y="428" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="155" x="773.337890625" y="440.7080078125">
+<a>
+<text>
+<string>Fornecedor</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<llabelMuitos id="156">
+<points>
+<p colinear="true" x="599" y="497.6194690265487" c1x="545" c1y="4" c2x="545" c2y="4"/>
+<p colinear="true" x="453" y="536.3805309734513" c1x="545" c1y="4" c2x="545" c2y="4"/>
+</points>
+<startConnector>
+<rConnector id="157">
+<Owner>
+<rel ref="150"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="158">
+<Owner>
+<ent ref="4b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<llabelMuitos id="159">
+<points>
+<p colinear="true" x="679" y="477.7142857142857" c1x="557" c1y="-16" c2x="557" c2y="-16"/>
+<p colinear="true" x="767" y="457.2857142857143" c1x="557" c1y="-16" c2x="557" c2y="-16"/>
+</points>
+<startConnector>
+<rConnector id="15a">
+<Owner>
+<rel ref="150"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="15b">
+<Owner>
+<ent ref="153"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>M</string>
+</text>
+</a>
+</llabelMuitos>
+<atrchave id="15c" nullable="false" attributeType="NUMBER">
+<children>
+<e id="15d" x="779" y="394" w="54" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="15e" x="788.849609375" y="396.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>CNPJ</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="15f" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="160" x="855" y="407" w="62" h="22">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="161" x="863.4619140625" y="410.7080078125">
+<a>
+<text>
+<string>contato</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="162" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="163" x="837" y="377" w="51" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="164" x="845.6513671875" y="379.7080078125">
+<a>
+<text>
+<string>nome</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="165" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="166" x="871" y="439" w="77" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="167" x="881.9140625" y="441.7080078125">
+<a>
+<text>
+<string>endereco</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="168">
+<points>
+<p colinear="true" x="806.5454545454545" y="428" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+<p colinear="true" x="806.2272727272727" y="414" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+</points>
+<startConnector>
+<rConnector id="169">
+<Owner>
+<ent ref="153"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="16a">
+<Owner>
+<atrchave ref="15c"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="16b">
+<points>
+<p colinear="true" x="847" y="432.8101265822785" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+<p colinear="true" x="857.0333333333333" y="429" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+</points>
+<startConnector>
+<rConnector id="16c">
+<Owner>
+<ent ref="153"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="16d">
+<Owner>
+<atr ref="15f"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="16e">
+<points>
+<p colinear="true" x="825.1967213114754" y="428" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+<p colinear="true" x="853.4016393442623" y="397" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+</points>
+<startConnector>
+<rConnector id="16f">
+<Owner>
+<ent ref="153"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="170">
+<Owner>
+<atr ref="162"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="171">
+<points>
+<p colinear="true" x="847" y="448.390243902439" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+<p colinear="true" x="871" y="448.62439024390244" c1x="515" c1y="-29" c2x="515" c2y="-29"/>
+</points>
+<startConnector>
+<rConnector id="172">
+<Owner>
+<ent ref="153"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="173">
+<Owner>
+<atr ref="165"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<rel id="174">
+<children>
+<diamond id="175" x="596" y="386" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="176" x="610.3798828125" y="398.7080078125">
+<a>
+<text>
+<string>gerencia</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelUm id="177">
+<points>
+<p colinear="true" x="676" y="415.82456140350877" c1x="-459" c1y="-355.37209302325584" c2x="-459" c2y="-355.37209302325584"/>
+<p colinear="true" x="767" y="438.17543859649123" c1x="-459" c1y="-355.37209302325584" c2x="-459" c2y="-355.37209302325584"/>
+</points>
+<startConnector>
+<rConnector id="178">
+<Owner>
+<rel ref="174"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="179">
+<Owner>
+<ent ref="153"/>
+</Owner>
+</rConnector>
+</endConnector>
+</llabelUm>
+<llabelMuitos id="17a">
+<points>
+<p colinear="true" x="596" y="391.3908988891112" c1x="-480" c1y="-355" c2x="-480" c2y="-355"/>
+<p colinear="true" x="466.2428067835366" y="344" c1x="-480" c1y="-355" c2x="-480" c2y="-355"/>
+</points>
+<startConnector>
+<rConnector id="17b">
+<Owner>
+<rel ref="174"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="17c">
+<Owner>
+<ent ref="13b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<rel id="17d">
+<children>
+<diamond id="17e" x="505" y="304" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="17f" x="522.6611328125" y="316.7080078125">
+<a>
+<text>
+<string>contem</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<ent id="180">
+<children>
+<r id="181" x="623" y="299" w="124.560546875" h="40">
+<a>
+<fillColor>
+<color rgba="#ffebffe8"/>
+</fillColor>
+</a>
+</r>
+<t id="182" x="633" y="311.7080078125">
+<a>
+<text>
+<string>Nota_de_entrada</string>
+</text>
+</a>
+</t>
+</children>
+</ent>
+<llabelUm id="183">
+<points>
+<p colinear="true" x="585" y="322.5742827904516" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+<p colinear="true" x="623" y="321.2198514413806" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+</points>
+<startConnector>
+<rConnector id="184">
+<Owner>
+<rel ref="17d"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="185">
+<Owner>
+<ent ref="180"/>
+</Owner>
+</rConnector>
+</endConnector>
+</llabelUm>
+<llabelMuitos id="186">
+<points>
+<p colinear="true" x="505" y="324" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+<p colinear="true" x="473.96484375" y="324" c1x="-492" c1y="-353" c2x="-492" c2y="-353"/>
+</points>
+<startConnector>
+<rConnector id="187">
+<Owner>
+<rel ref="17d"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="188">
+<Owner>
+<ent ref="13b"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<atrchave id="189" nullable="false" attributeType="NUMBER">
+<children>
+<e id="18a" x="695" y="269" w="35" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="18b" x="706.25390625" y="271.7080078125">
+<a>
+<fontUnderlined>
+<boolean>true</boolean>
+</fontUnderlined>
+<fontBold>
+<boolean>true</boolean>
+</fontBold>
+<text>
+<string>id</string>
+</text>
+</a>
+</t>
+</children>
+</atrchave>
+<atr id="18c" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="18d" x="613" y="270" w="50" h="20">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="18e" x="624.6904296875" y="272.7080078125">
+<a>
+<text>
+<string>data</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<atr id="18f" nullable="false" attributeType="VARCHAR2(128)">
+<children>
+<e id="190" x="635" y="243" w="80" h="23">
+<a>
+<fillColor>
+<color rgba="#ffffebeb"/>
+</fillColor>
+</a>
+</e>
+<t id="191" x="642.5625" y="247.2080078125">
+<a>
+<text>
+<string>valor_total</string>
+</text>
+</a>
+</t>
+</children>
+</atr>
+<lcaf id="192">
+<points>
+<p colinear="true" x="705.695068359375" y="289" c1x="-375" c1y="-403" c2x="-375" c2y="-403"/>
+<p colinear="true" x="698.89013671875" y="299" c1x="-375" c1y="-403" c2x="-375" c2y="-403"/>
+</points>
+<startConnector>
+<rConnector id="193">
+<Owner>
+<atrchave ref="189"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="194">
+<Owner>
+<ent ref="180"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="195">
+<points>
+<p colinear="true" x="650.1231470352564" y="290" c1x="-375" c1y="-403" c2x="-375" c2y="-403"/>
+<p colinear="true" x="661.0339793669872" y="299" c1x="-375" c1y="-403" c2x="-375" c2y="-403"/>
+</points>
+<startConnector>
+<rConnector id="196">
+<Owner>
+<atr ref="18c"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="197">
+<Owner>
+<ent ref="180"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<lcaf id="198">
+<points>
+<p colinear="true" x="676.8329169694767" y="266" c1x="-375" c1y="-403" c2x="-375" c2y="-403"/>
+<p colinear="true" x="682.0925917514535" y="299" c1x="-375" c1y="-403" c2x="-375" c2y="-403"/>
+</points>
+<startConnector>
+<rConnector id="199">
+<Owner>
+<atr ref="18f"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="19a">
+<Owner>
+<ent ref="180"/>
+</Owner>
+</rConnector>
+</endConnector>
+</lcaf>
+<rel id="19b">
+<children>
+<diamond id="19c" x="784" y="232" w="80" h="40">
+<a>
+<fillColor>
+<color rgba="#ffddddff"/>
+</fillColor>
+</a>
+</diamond>
+<t id="19d" x="800.826171875" y="244.7080078125">
+<a>
+<text>
+<string>registra</string>
+</text>
+</a>
+</t>
+</children>
+</rel>
+<llabelMuitos id="19e">
+<points>
+<p colinear="true" x="784" y="271.3195305845166" c1x="-304" c1y="-358" c2x="-304" c2y="-358"/>
+<p colinear="true" x="726.6891470382462" y="299" c1x="-304" c1y="-358" c2x="-304" c2y="-358"/>
+</points>
+<startConnector>
+<rConnector id="19f">
+<Owner>
+<rel ref="19b"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="1a0">
+<Owner>
+<ent ref="180"/>
+</Owner>
+</rConnector>
+</endConnector>
+<a>
+<text>
+<string>N</string>
+</text>
+</a>
+</llabelMuitos>
+<llabelUm id="1a1">
+<points>
+<p colinear="true" x="863.4805194805194" y="232" c1x="562" c1y="-7" c2x="562" c2y="-7"/>
+<p colinear="true" x="936.5194805194805" y="195" c1x="562" c1y="-7" c2x="562" c2y="-7"/>
+</points>
+<startConnector>
+<rConnector id="1a2">
+<Owner>
+<rel ref="19b"/>
+</Owner>
+</rConnector>
+</startConnector>
+<endConnector>
+<rConnector id="1a3">
+<Owner>
+<ent ref="f"/>
+</Owner>
+</rConnector>
+</endConnector>
+</llabelUm>
+</figures>
+</drawing>
