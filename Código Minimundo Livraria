@@ -1,0 +1,216 @@
+CREATE TABLE Pessoa(
+    cpf CHAR(11) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    endereco VARCHAR(200)
+);
+
+CREATE TABLE Funcionario(
+    cpf CHAR(11) PRIMARY KEY,
+    matricula INT NOT NULL UNIQUE,
+    cargo VARCHAR(50) NOT NULL,
+    salario INT NOT NULL,
+    data_admissao DATE NOT NULL,
+    FOREIGN KEY (cpf) REFERENCES Pessoa(cpf)
+);
+
+CREATE TABLE Cliente(
+    cpf CHAR(11) PRIMARY KEY,
+    data_nasc DATE NOT NULL,
+    pts_fidalidade INT NOT NULL,
+    data_ultimo_login TIMESTAMP,
+    FOREIGN KEY (cpf) REFERENCES Pessoa(cpf)
+);
+
+CREATE TABLE Editora(
+    cnpj CHAR(14) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    contato VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Categoria(
+    id INT PRIMARY KEY,
+    nome VARCHAR(80) NOT NULL,
+    descricao VARCHAR(250)
+);
+
+CREATE TABLE Livro(
+    isbn CHAR(13) PRIMARY KEY,
+    cnpj_editora CHAR(14) NOT NULL,
+    id_categoria INT NOT NULL,
+    titulo VARCHAR(150) NOT NULL,
+    preco_venda FLOAT NOT NULL,
+    ano_publi INT NOT NULL,
+    FOREIGN KEY (cnpj_editora) REFERENCES Editora(cnpj),
+    FOREIGN KEY (id_categoria) REFERENCES Categoria(id)
+);
+
+CREATE TABLE Estoque(
+    cod_armaz INT PRIMARY KEY,
+    isbn CHAR(13) NOT NULL,
+    qntd_livros INT NOT NULL,
+    espaco_disponivel INT NOT NULL,
+    FOREIGN KEY (isbn) REFERENCES Livro(isbn)
+);
+
+CREATE TABLE Autor(
+    id_autor INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Livro_autor(
+    isbn CHAR(13),
+    id_autor INT,
+    PRIMARY KEY (isbn, id_autor),
+    FOREIGN KEY (isbn) REFERENCES Livro(isbn),
+    FOREIGN KEY (id_autor) REFERENCES Autor(id_autor)
+);
+
+CREATE TABLE Pedido_de_venda(
+    id INT PRIMARY KEY,
+    cpf_cliente CHAR(11) NOT NULL,
+    cpf_funcionario CHAR(11) NOT NULL,
+    data_p DATE NOT NULL,
+    valor_total FLOAT NOT NULL,
+    status VARCHAR(25) NOT NULL,
+    FOREIGN KEY (cpf_cliente) REFERENCES Cliente(cpf),
+    FOREIGN KEY (cpf_funcionario) REFERENCES Funcionario(cpf)
+);
+
+CREATE TABLE Item_pedido(
+    id INT,
+    isbn CHAR(13),
+    quantidade INT NOT NULL,
+    PRIMARY KEY (id, isbn),
+    FOREIGN KEY (id) REFERENCES Pedido_de_venda(id),
+    FOREIGN KEY (isbn) REFERENCES Livro(isbn)
+);
+
+CREATE TABLE Fornecedor(
+    cnpj CHAR(14) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    contato VARCHAR(100) NOT NULL,
+    endereco VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE Livro_fornecedor(
+    isbn CHAR(13),
+    cnpj CHAR(14),
+    PRIMARY KEY (isbn, cnpj),
+    FOREIGN KEY (cnpj) REFERENCES Fornecedor(cnpj),
+    FOREIGN KEY (isbn) REFERENCES Livro(isbn)
+);
+
+CREATE TABLE Nota_de_entrada(
+    id INT PRIMARY KEY,
+    cnpj CHAR(14) NOT NULL,
+    cpf CHAR(11),
+    data_n DATE NOT NULL,
+    valor_total FLOAT NOT NULL,
+    FOREIGN KEY (cnpj) REFERENCES Fornecedor(cnpj),
+    FOREIGN KEY (cpf) REFERENCES Funcionario(cpf)
+);
+
+CREATE TABLE Item_de_entrada(
+    id INT,
+    isbn CHAR(13),
+    quantidade INT NOT NULL,
+    custo_unitario FLOAT NOT NULL,
+    PRIMARY KEY (id, isbn),
+    FOREIGN KEY (id) REFERENCES Nota_de_entrada(id),
+    FOREIGN KEY (isbn) REFERENCES Livro(isbn)
+);
+
+INSERT INTO Pessoa VALUES
+('12345678901', 'Ana Silva', 'ana@gmail.com', 'Rua das Flores, 20'),
+('23456789012', 'Carlos Souza', 'carlos@gmail.com', 'Rua Central, 45'),
+('34567890123', 'Maria Oliveira', 'maria@gmail.com', 'Av. Brasil, 100'),
+('45678901234', 'Joao Santos', 'joao@gmail.com', 'Rua Minas, 30'),
+('56789012345', 'Pedro Costa', 'pedro@gmail.com', 'Rua Bahia, 15'),
+('67890123456', 'Julia Mendes', 'julia@gmail.com', 'Rua das Acacias, 80'),
+('78901234567', 'Lucas Rocha', 'lucas@gmail.com', 'Av. Principal, 50');
+
+INSERT INTO Funcionario VALUES
+('12345678901', 1, 'Gerente', 3500, '2022-03-10'),
+('23456789012', 2, 'Vendedor', 2200, '2023-05-15'),
+('34567890123', 3, 'Caixa', 1800, '2024-02-20');
+
+INSERT INTO Cliente VALUES
+('45678901234', '1998-04-20', 120, '2026-11-09 10:20:00'),
+('56789012345', '2002-12-05', 80, '2026-11-08 18:00:00'),
+('67890123456', '2001-07-15', 200, '2026-11-10 14:30:00'),
+('78901234567', '1999-09-25', 50, '2026-11-07 09:15:00');
+
+INSERT INTO Editora VALUES
+('12345678000199', 'Editora Moderna', 'moderna@gmail.com'),
+('23456789000188', 'Editora Saraiva', 'saraiva@gmail.com'),
+('34567891000177', 'Editora Atica', 'atica@gmail.com');
+
+INSERT INTO Categoria VALUES
+(1, 'Romance', 'Livros de romance'),
+(2, 'Fantasia', 'Livros de fantasia'),
+(3, 'Suspense', 'Livros de suspense'),
+(4, 'Tecnologia', 'Livros de tecnologia');
+
+INSERT INTO Livro VALUES
+('9781234567890', '12345678000199', 1, 'Amor em Paris', 39.90, 2022),
+('9781234567891', '23456789000188', 2, 'Reino Encantado', 49.90, 2021),
+('9781234567892', '34567891000177', 4, 'Aprendendo Programacao', 65.00, 2023),
+('9781234567893', '12345678000199', 3, 'O Misterio', 32.50, 2020),
+('9781234567894', '23456789000188', 1, 'Cartas de Amor', 45.00, 2024);
+
+INSERT INTO Estoque VALUES
+(1, '9781234567890', 15, 40),
+(2, '9781234567891', 20, 35),
+(3, '9781234567892', 8, 25),
+(4, '9781234567893', 12, 30),
+(5, '9781234567894', 18, 45);
+
+INSERT INTO Autor VALUES
+(1, 'Machado de Assis'),
+(2, 'Clarice Lispector'),
+(3, 'Paulo Coelho'),
+(4, 'Jorge Amado'),
+(5, 'Carla Mendes');
+
+INSERT INTO Livro_autor VALUES
+('9781234567890', 3),
+('9781234567891', 5),
+('9781234567892', 2),
+('9781234567893', 1),
+('9781234567894', 4);
+
+INSERT INTO Pedido_de_venda VALUES
+(1, '45678901234', '12345678901', '2026-11-01', 89.80, 'Pago'),
+(2, '56789012345', '23456789012', '2026-11-03', 65.00, 'Pago'),
+(3, '67890123456', '34567890123', '2026-11-05', 45.00, 'Pendente'),
+(4, '78901234567', '23456789012', '2026-11-06', 82.40, 'Pago');
+
+INSERT INTO Item_pedido VALUES
+(1, '9781234567890', 1),
+(1, '9781234567891', 1),
+(2, '9781234567892', 1),
+(3, '9781234567894', 1),
+(4, '9781234567893', 2);
+
+INSERT INTO Fornecedor VALUES
+('45678912000144', 'Distribuidora Alfa', 'alfa@gmail.com', 'Rua A, 100'),
+('56789012000155', 'Livros Brasil', 'brasil@gmail.com', 'Rua B, 200'),
+('67890123000166', 'Distribuidora Beta', 'beta@gmail.com', 'Rua C, 300');
+
+INSERT INTO Livro_fornecedor VALUES
+('9781234567890', '45678912000144'),
+('9781234567891', '56789012000155'),
+('9781234567892', '67890123000166'),
+('9781234567893', '45678912000144'),
+('9781234567894', '56789012000155');
+
+INSERT INTO Nota_de_entrada VALUES
+(1, '45678912000144', '12345678901', '2026-10-20', 300.00),
+(2, '56789012000155', '23456789012', '2026-10-25', 450.00),
+(3, '67890123000166', '34567890123', '2026-11-01', 520.00);
+
+INSERT INTO Item_de_entrada VALUES
+(1, '9781234567890', 10, 20.00),
+(2, '9781234567891', 15, 30.00),
+(3, '9781234567892', 8, 40.00);
